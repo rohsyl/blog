@@ -1,5 +1,5 @@
 .markdown {
-    @apply text-lg leading-relaxed;
+    @apply leading-relaxed;
 }
 
 .markdown p,
@@ -7,6 +7,11 @@
 .markdown ol,
 .markdown blockquote {
     @apply my-6;
+}
+
+
+.markdown p {
+    @apply text-justify;
 }
 
 .markdown h2 {

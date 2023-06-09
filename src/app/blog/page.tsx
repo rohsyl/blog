@@ -1,9 +1,17 @@
-import {getAllPosts} from "@/app/lib/api";
+import {getAllPosts, Items} from "@/app/lib/api";
 import React from "react";
 import PostPreview from "@/app/components/Blog/PostCard";
 
 export default function Home() {
     const posts = getAllPosts(["title", "date", "excerpt", "coverImage", "slug"]);
+    const postGroups = posts
+        .reduce((acc, post, i) => {
+            const index = i % 2;
+            acc[index] = acc[index] || [];
+            // @ts-ignore
+            acc[index].push(post);
+            return acc;
+        }, [] as Items[][]);
 
     return (
         <div className="container mx-auto px-5">
@@ -17,12 +25,18 @@ export default function Home() {
 
                 <div className="h-12"></div>
 
-                <div className="grid md:grid-cols-2 grid-cols-1 md:gap-8 gap-4">
-                    {posts.map((post) => (
-                        <div key={post.title}>
-                            <PostPreview post={post} />
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+                    {postGroups.map((posts) => (
+                        <div className="grid gap-4">
+                            {posts.map((post) => (
+                                <div key={post.title}>
+                                    <PostPreview post={post} />
+                                </div>
+                            ))}
                         </div>
                     ))}
+
                 </div>
             </main>
         </div>

@@ -42,8 +42,8 @@ export default function Home() {
 
           <div className="grid md:grid-cols-2 grid-cols-1 mx-auto md:gap-8 gap-4">
               {recentPosts.map((post) => (
-                  <div key={post.title} className="h-100">
-                      <PostPreview post={post} />
+                  <div key={post.title}>
+                      <PostPreview post={post} noImage={true} />
                   </div>
               ))}
           </div>

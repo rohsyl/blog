@@ -1,18 +1,19 @@
 import Image from "next/image";
 import Link from "next/link";
 import DateFormatter from "@/app/components/DateFormatter";
+import {Items} from "@/app/lib/api";
 
-type Items = {
-    [key: string]: string;
-};
 
-export default function PostPreview({ post }: { post: Items }) {
+export default function PostPreview(props: { post: Items, noImage?: boolean }) {
+
+    const { post, noImage = false } = props
+
     return (
-        <div className="h-100">
+        <div>
             <article
-                className="h-100 p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-black dark:border-gray-700 ">
+                className="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-black dark:border-gray-700 ">
 
-                {post?.coverImage && (
+                {(post?.coverImage && !noImage) && (
                     <div className="flex justify-center mb-5 max-h-64 ">
                         <Image
                             alt={`cover image for ${post.title}`}
@@ -53,15 +54,6 @@ export default function PostPreview({ post }: { post: Items }) {
                     </Link>
                 </div>
             </article>
-
-            <Link href={`/blog/posts/${post.slug}`}>
-
-                <div className="mt-4 space-y-2">
-                    <p className="font-semibold text-xl group-hover:underline">
-
-                    </p>
-                </div>
-            </Link>
         </div>
     );
 }
