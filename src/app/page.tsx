@@ -25,7 +25,6 @@ export default function Home() {
                       I'm a software engineer and I like to build things. <br/>
                       I'm currently working at Coucou&Co and Hustnet as a fullstack developer.<br/>
                       This blog is a place where I share my thoughts and ideas about software development.
-
                   </div>
                   <div>
                   </div>
