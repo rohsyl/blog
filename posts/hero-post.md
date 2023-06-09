@@ -1,5 +1,4 @@
 ---
-postTitle: First Post!
 date: 2023-06-08
 title: Allow me to introduce myself.
 excerpt: My name is Sylvain, and I am a highly skilled and experienced full-stack web developer with nearly a decade of hands-on experience in the field.

@@ -8,7 +8,12 @@ export default function Home() {
     return (
         <div className="container mx-auto px-5">
             <main>
-                <h1 className="text-center text-3xl">All Posts</h1>
+                <div className="mx-auto max-w-screen-sm text-center lg:mb-16 mb-8">
+                    <h2 className="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Posts</h2>
+                    <p className="font-light text-gray-500 sm:text-xl dark:text-gray-400">
+                        Here are all my posts. Enjoy ! 🎉
+                    </p>
+                </div>
 
                 <div className="h-12"></div>
 
