@@ -10,9 +10,7 @@ export default function AnimatedTitle() {
                 1000, // Waits 1s
                 'Hi, ',
                 800, // Waits 2s
-                'Hi, I\'m Sylvain',
-                1000, // Waits 1s
-                'Hi, I\'m Sylvain Roh',
+                'Hi, I\'m Sylvain R.',
                 1000, // Waits 1s
             ]}
             wrapper="span"

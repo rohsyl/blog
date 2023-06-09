@@ -25,7 +25,7 @@ export default function Home() {
                   <div className="flex">
                       <div className="flex-grow text-center font-light text-gray-500 sm:text-xl dark:text-gray-400">
                           I&apos;m a software engineer and I like to build things. <br/>
-                          I&apos;m currently working at Coucou&Co and Hustnet as a fullstack developer.<br/>
+                          I&apos;m currently working at Coucou&Co and Husnet as a fullstack developer.<br/>
                           This blog is a place where I share my thoughts and ideas about software development.
                       </div>
                       <div>
