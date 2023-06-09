@@ -4,6 +4,8 @@ import {getAllPosts} from "@/app/lib/api";
 import PostPreview from "@/app/components/Blog/PostCard";
 import Link from "next/link";
 import Container from "@/app/components/Container";
+import { TypeAnimation } from 'react-type-animation';
+import AnimatedTitle from "@/app/components/AnimatedTitle";
 
 export default function Home() {
 
@@ -16,7 +18,7 @@ export default function Home() {
               <div className="mb-20">
                   <div className="mx-auto max-w-screen-sm text-center">
                       <h2 className="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
-                          Hi, I&apos;m Sylvain Roh
+                        <AnimatedTitle />
                       </h2>
                   </div>
 
