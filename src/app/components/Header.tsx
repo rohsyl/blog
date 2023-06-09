@@ -23,8 +23,8 @@ export default function Header() {
                     <nav className="flex flex-grow items-center justify-around mt-4 text-sm font-medium text-gray-900 dark:text-gray-100 max-w-2xl mt-10 lg:mt-0">
                         <Link href="/" className="hover:underline">Home</Link>
                         <Link href="/blog" className="hover:underline">Blog</Link>
-                        <Link href="#" className="hover:underline">About</Link>
-                        <Link href="#" className="hover:underline">Contact</Link>
+                        <Link href="/about" className="hover:underline">About</Link>
+                        <Link href="/contact" className="hover:underline">Contact</Link>
                     </nav>
 
                 </div>

@@ -23,10 +23,8 @@ export default function RootLayout({
 
       <Header />
 
-      <div className="font-mono p-4 md:p-8 lg:p-10 mt-10">
-        <main className="mx-auto max-w-screen-xl ">
-          {children}
-        </main>
+      <div className="font-mono mt-10">
+        {children}
       </div>
 
       <Footer />

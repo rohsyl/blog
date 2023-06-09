@@ -5,6 +5,7 @@ import markdownToHtml from "@/app/lib/mdToHtml";
 import {getPostBySlug} from "@/app/lib/api";
 import Image from "next/image";
 import DateFormatter from "@/app/components/DateFormatter";
+import Container from "@/app/components/Container";
 
 export default async function Post({ params }: { params: { slug: string } }) {
     const post = getPostBySlug(params.slug, ["title", "author", "content", "coverImage", "date"]);
@@ -12,7 +13,7 @@ export default async function Post({ params }: { params: { slug: string } }) {
     const content = await markdownToHtml(post.content || "");
 
     return (
-        <div>
+        <Container>
             <div className="w-full text-white">
                 <div className="mb-10">
                     <p className="text-2xl">{post.title}</p>
@@ -23,7 +24,7 @@ export default async function Post({ params }: { params: { slug: string } }) {
                 </div>
 
                 {post?.coverImage && (
-                    <div>
+                    <div className="rounded-lg overflow-hidden">
                         <Image
                             alt={`cover image for ${post.title}`}
                             src={post.coverImage}
@@ -40,8 +41,6 @@ export default async function Post({ params }: { params: { slug: string } }) {
                 />
 
             </div>
-        </div>
-
-
+        </Container>
     );
 }
