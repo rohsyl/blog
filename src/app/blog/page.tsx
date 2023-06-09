@@ -27,8 +27,8 @@ export default function Home() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
 
-                {postGroups.map((posts) => (
-                    <div className="grid gap-4">
+                {postGroups.map((posts, i) => (
+                    <div className="grid gap-4" key={i}>
                         {posts.map((post) => (
                             <div key={post.title}>
                                 <PostPreview post={post} />
