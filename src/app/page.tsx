@@ -16,14 +16,14 @@ export default function Home() {
 
               <div className="mx-auto max-w-screen-sm text-center">
                   <h2 className="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
-                      Hi, I'm Sylvain Roh
+                      Hi, I&apos;m Sylvain Roh
                   </h2>
               </div>
 
               <div className="flex">
                   <div className="flex-grow text-center font-light text-gray-500 sm:text-xl dark:text-gray-400">
-                      I'm a software engineer and I like to build things. <br/>
-                      I'm currently working at Coucou&Co and Hustnet as a fullstack developer.<br/>
+                      I&apos;m a software engineer and I like to build things. <br/>
+                      I&apos;m currently working at Coucou&Co and Hustnet as a fullstack developer.<br/>
                       This blog is a place where I share my thoughts and ideas about software development.
                   </div>
                   <div>
