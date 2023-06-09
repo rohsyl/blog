@@ -10,7 +10,8 @@
 }
 
 
-.markdown p {
+.markdown p,
+.markdown li {
     @apply text-justify;
 }
 

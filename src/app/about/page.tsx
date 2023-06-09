@@ -6,9 +6,7 @@ export default function About() {
 
     return (
         <Container>
-            <main>
-                TODO
-            </main>
+            TODO
         </Container>
     );
 }

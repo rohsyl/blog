@@ -39,7 +39,8 @@ export default function Home() {
                      height={350}
                      style={{objectFit:"cover", objectPosition:"center"}}
               />
-              <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", backgroundColor: "rgba(0, 0, 0, 0.7)" }}></div>
+              <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }}
+                    className="bg-opacity-70 bg-white dark:bg-black dark:bg-opacity-70"></div>
           </div>
           <Container>
 
@@ -59,13 +60,15 @@ export default function Home() {
                       </div>
                   ))}
               </div>
-              <div className="h-16"></div>
-              <Link
-                  href="/blog"
-                  className="text-3xl hover:text-gray-300 hover:underline"
-              >
-                  Read More{" -> "}
-              </Link>
+              <div className="h-8"></div>
+              <div className="text-center">
+                  <Link
+                      href="/blog"
+                      className="text-2xl hover:text-gray-300 hover:underline"
+                  >
+                      Read More...
+                  </Link>
+              </div>
 
           </Container>
       </>

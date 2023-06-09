@@ -1,6 +1,7 @@
 import Image from "next/image";
+import DarkToggle from "@/app/components/DarkToggle";
 
-export default function Footer() {
+export default function Footer(props: { darkMode: boolean, toggleDarkMode: () => void }) {
     return (
         <footer className="p-4 md:p-8 lg:p-10 font-mono">
             <div className="mx-auto text-center">
@@ -30,6 +31,10 @@ export default function Footer() {
             </span>
             <a href="#" className="hover:underline ml-2">Sylvain Roh</a>. All Rights Reserved.
           </span>
+            </div>
+
+            <div className="text-center mt-5">
+                <DarkToggle darkMode={props.darkMode} toggleDarkMode={props.toggleDarkMode} />
             </div>
         </footer>
     )
