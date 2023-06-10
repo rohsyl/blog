@@ -25,11 +25,11 @@ export default function Home() {
 
             <div className="h-12"></div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="hidden md:grid grid-cols-1 md:grid-cols-2 gap-4 ">
 
-                {postGroups.map((posts, i) => (
+                {postGroups.map((postItems, i) => (
                     <div className="grid gap-4" key={i}>
-                        {posts.map((post) => (
+                        {postItems.map((post) => (
                             <div key={post.title}>
                                 <PostPreview post={post} />
                             </div>
@@ -37,6 +37,13 @@ export default function Home() {
                     </div>
                 ))}
 
+            </div>
+            <div className="grid md:hidden grid-cols-1 md:grid-cols-2 gap-4 ">
+                {posts.map((post) => (
+                    <div key={post.title}>
+                        <PostPreview post={post} />
+                    </div>
+                ))}
             </div>
         </Container>
     );

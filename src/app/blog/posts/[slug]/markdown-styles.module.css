@@ -20,3 +20,8 @@
 .markdown li {
     @apply list-disc ml-6 mb-2;
 }
+
+
+.markdown p img {
+    @apply mx-auto;
+}
