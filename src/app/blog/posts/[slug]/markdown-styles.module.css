@@ -25,3 +25,11 @@
 .markdown p img {
     @apply mx-auto;
 }
+
+.markdown code {
+    @apply bg-gray-200 rounded px-1;
+}
+
+.markdown a {
+    @apply text-blue-500 underline;
+}
