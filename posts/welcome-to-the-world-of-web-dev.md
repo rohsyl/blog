@@ -5,6 +5,7 @@ title: Welcome to the World of Web Development and Tech!
 excerpt: Hello, fellow tech enthusiasts, web developers, and curious minds! I am delighted to introduce you to my brand new blog, dedicated to the captivating realm of web development and technology.
 coverImage: /posts/welcome-to-the-world-of-web-dev/cover.jpg
 author: Sylvain Roh
+published: 1
 ---
 ## Introduction
 Hello, fellow tech enthusiasts, web developers, and curious minds! I am delighted to introduce you to my brand new blog, dedicated to the captivating realm of web development and technology. Whether you're a seasoned professional, a budding coder, or simply someone eager to explore the ever-evolving world of tech, this is the place for you.

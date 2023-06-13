@@ -9,7 +9,7 @@ import AnimatedTitle from "@/app/components/AnimatedTitle";
 
 export default function Home() {
 
-    const posts = getAllPosts(["title", "date", "excerpt", "coverImage", "slug", "excerpt", 'author']);
+    const posts = getAllPosts(["title", "date", "excerpt", "coverImage", "slug", "excerpt", 'author', "published"]);
     const recentPosts = posts.slice(0, 2);
 
   return (

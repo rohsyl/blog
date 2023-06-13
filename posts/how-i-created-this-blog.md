@@ -3,6 +3,7 @@ date: 2023-06-10
 title: How did i created this blog
 excerpt: In this blog post, we will explore how I created a dynamic blog using Next.js 13, a powerful React framework, and stored all the blog posts as Markdown files.
 author: Sylvain Roh
+published: 1
 ---
 ## Introduction
 In this blog post, we will explore how I created this dynamic blog using Next.js 13, a powerful React framework, and stored all the blog posts as Markdown files. This setup allows for easy content management and seamless rendering of blog posts on the client-side. Let's dive in and discover the key aspects of this setup.

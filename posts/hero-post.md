@@ -4,6 +4,7 @@ title: Allow me to introduce myself.
 excerpt: My name is Sylvain, and I am a highly skilled and experienced full-stack web developer with nearly a decade of hands-on experience in the field.
 coverImage: /posts/allow-me-to-introduce-myself/cover.jpg
 author: Sylvain Roh
+published: 1
 ---
 
 Hello everyone,

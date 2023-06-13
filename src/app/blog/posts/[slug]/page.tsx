@@ -10,7 +10,7 @@ import Container from "@/app/components/Container";
 export default async function Post({ params }: { params: { slug: string } }) {
     const post = getPostBySlug(params.slug, ["title", "author", "content", "coverImage", "date"]);
 
-    const content = await markdownToHtml(post.content || "");
+    const content = await markdownToHtml((post.content || "") as string);
 
     return (
         <Container>
@@ -19,7 +19,7 @@ export default async function Post({ params }: { params: { slug: string } }) {
                     <p className="text-2xl">{post.title}</p>
                     <p className="text-gray-400">
                         {post.author} |{" "}
-                        <DateFormatter dateString={post.date} />
+                        <DateFormatter dateString={post.date as string} />
                     </p>
                 </div>
 
@@ -27,7 +27,7 @@ export default async function Post({ params }: { params: { slug: string } }) {
                     <div className="rounded-lg overflow-hidden">
                         <Image
                             alt={`cover image for ${post.title}`}
-                            src={post.coverImage}
+                            src={post.coverImage as string}
                             width={1920}
                             height={1080}
                             style={{ width: "100%" }}

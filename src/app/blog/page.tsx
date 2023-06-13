@@ -4,7 +4,7 @@ import PostPreview from "@/app/components/Blog/PostCard";
 import Container from "@/app/components/Container";
 
 export default function Home() {
-    const posts = getAllPosts(["title", "date", "excerpt", "coverImage", "slug"]);
+    const posts = getAllPosts(["title", "date", "excerpt", "coverImage", "slug", "published"]);
     const postGroups = posts
         .reduce((acc, post, i) => {
             const index = i % 2;
