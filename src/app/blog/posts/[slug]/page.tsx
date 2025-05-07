@@ -7,7 +7,8 @@ import Image from "next/image";
 import DateFormatter from "@/app/components/DateFormatter";
 import Container from "@/app/components/Container";
 
-export default async function Post({ params }: { params: { slug: string } }) {
+export default async function Post(props: { params: Promise<{ slug: string }> }) {
+    const params = await props.params;
     const post = getPostBySlug(params.slug, ["title", "author", "content", "coverImage", "date"]);
 
     const content = await markdownToHtml((post.content || "") as string);
