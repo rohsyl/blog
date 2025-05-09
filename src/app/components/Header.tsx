@@ -9,8 +9,8 @@ export default function Header() {
 
     return (
 
-        <header className="font-mono p-4 md:p-8 lg:p-10">
-            <div className="mx-auto max-w-screen-xl ">
+        <header className="fixed w-full z-1000 top-0 font-mono p-4 md:p-8 lg:p-10">
+            <div className="mx-auto max-w-(--breakpoint-xl) ">
                 <div className="w-full items-center justify-between text-sm lg:flex">
                     <Link href="/">
                         <div className="flex items-center justify-between font-mono">
@@ -28,7 +28,7 @@ export default function Header() {
                         </div>
                     </Link>
 
-                    <nav className="flex flex-grow items-center justify-around mt-4 text-sm font-medium text-gray-900 dark:text-gray-100 max-w-2xl mt-10 lg:mt-0">
+                    <nav className="flex grow items-center justify-around mt-4 text-sm font-medium text-gray-900 dark:text-gray-100 max-w-2xl mt-10 lg:mt-0">
                         <Link href="/" className={'hover:underline ' + (pathname == "/" ? "font-bold underline" : "")}>Home</Link>
                         <Link href="/blog" className={'hover:underline ' + (pathname == "/blog" ? "font-bold underline" : "")}>Blog</Link>
                         <Link href="/about" className={'hover:underline ' + (pathname == "/about" ? "font-bold underline" : "")}>About</Link>

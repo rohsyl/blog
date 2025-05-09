@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
       <Html>
           <Header />
-          <div className="font-mono mt-10">
+          <div className="font-mono md:pt-30">
             {children}
           </div>
       </Html>
