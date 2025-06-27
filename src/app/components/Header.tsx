@@ -9,7 +9,7 @@ export default function Header() {
 
     return (
 
-        <header className="fixed w-full z-1000 top-0 font-mono p-4 md:p-8 lg:p-10">
+        <header className="fixed w-full z-1000 top-0 font-mono py-4 px-4 md:px-8 lg:px-10 bg-white dark:bg-black">
             <div className="mx-auto max-w-(--breakpoint-xl) ">
                 <div className="w-full items-center justify-between text-sm lg:flex">
                     <Link href="/">

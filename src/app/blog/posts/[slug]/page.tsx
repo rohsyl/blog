@@ -37,7 +37,7 @@ export default async function Post(props: { params: Promise<{ slug: string }> })
                 )}
 
                 <div
-                    className={markdownStyles["markdown"]}
+                    className="markdown"
                     dangerouslySetInnerHTML={{ __html: content }}
                 />
 

@@ -4,7 +4,7 @@ title: Stall like a boss on Rocket League
 excerpt: I will explain how i have created a macro to stall like a boss on Rocket League
 coverImage: /posts/rocket-league-stall-macro/cover.png
 author: Sylvain Roh
-published: 0
+published: 1
 ---
 ## Introduction : Stall like a boss on Rocket League
 
