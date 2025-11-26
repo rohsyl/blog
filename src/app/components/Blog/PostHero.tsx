@@ -25,18 +25,22 @@ export default function PostHero() {
                         <p className="font-semibold text-xl group-hover:underline">
                             {heroPost.title}
                         </p>
-                        <DateFormatter dateString={heroPost.date} />
+                        {typeof heroPost.date === 'string' && (
+                            <DateFormatter dateString={heroPost.date} />
+                        )}
                     </div>
                     <p>{heroPost.excerpt}</p>
                 </div>
 
-                <Image
-                    alt={`cover image for ${heroPost.title}`}
-                    src={heroPost.coverImage}
-                    width={1920}
-                    height={1080}
-                    style={{ width: "100%" }}
-                />
+                {(heroPost?.coverImage && typeof heroPost.coverImage === "string") && (
+                    <Image
+                        alt={`cover image for ${heroPost.title}`}
+                        src={heroPost.coverImage}
+                        width={1920}
+                        height={1080}
+                        style={{ width: "100%" }}
+                    />
+                )}
             </div>
         </Link>
     );

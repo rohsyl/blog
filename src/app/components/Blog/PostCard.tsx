@@ -13,7 +13,7 @@ export default function PostPreview(props: { post: Items, noImage?: boolean }) {
             <article
                 className="p-6 bg-white rounded-lg border border-zinc-200 shadow-md dark:bg-black dark:border-zinc-700 ">
 
-                {(post?.coverImage && !noImage) && (
+                {((post?.coverImage && typeof post.coverImage === "string") && !noImage) && (
                     <div className="flex justify-center mb-5 max-h-64 ">
                         <Image
                             alt={`cover image for ${post.title}`}
@@ -39,7 +39,9 @@ export default function PostPreview(props: { post: Items, noImage?: boolean }) {
                             {post.author}
                         </div>
                         <div>
-                            <DateFormatter dateString={post.date} />
+                            {typeof post.date === 'string' && (
+                                <DateFormatter dateString={post.date} />
+                            )}
                         </div>
                     </div>
                     <Link href={`/blog/posts/${post.slug}`}

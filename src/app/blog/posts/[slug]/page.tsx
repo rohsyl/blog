@@ -24,16 +24,14 @@ export default async function Post(props: { params: Promise<{ slug: string }> })
                     </p>
                 </div>
 
-                {post?.coverImage && (
-                    <div className="rounded-lg overflow-hidden">
-                        <Image
-                            alt={`cover image for ${post.title}`}
-                            src={post.coverImage as string}
-                            width={1920}
-                            height={1080}
-                            style={{ width: "100%" }}
-                        />
-                    </div>
+                {(post?.coverImage && typeof post.coverImage === "string") && (
+                    <Image
+                        alt={`cover image for ${post.title}`}
+                        src={post.coverImage}
+                        className="max-h-64 w-auto rounded-lg"
+                        width={1920}
+                        height={1080}
+                    />
                 )}
 
                 <div
