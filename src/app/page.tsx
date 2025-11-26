@@ -31,7 +31,7 @@ export default function Home() {
               </div>
           </BackgroundLines>
           <div className="max-h-64 overflow-hidden mb-20 relative">
-              <Image src={'/banner-home.jpg?1'} alt={'banner-home.jpg'}
+              <Image src={'/banner-home.jpg'} alt={'banner-home.jpg'}
                      width={1920}
                      height={350}
                      style={{objectFit:"cover", objectPosition:"center"}}
