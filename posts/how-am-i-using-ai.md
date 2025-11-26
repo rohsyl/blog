@@ -2,7 +2,6 @@
 date: 2025-11-26
 title: Vibe Coding, Productivity, and Staying Sane with AI
 excerpt: A personal look at how AI fits into my daily work as a developer - where it helps, where it fails, and why it hasn’t replaced genuine understanding.
-coverImage: /posts/how-am-i-using-ai/cover.png
 author: Sylvain Roh
 published: 1
 ---
