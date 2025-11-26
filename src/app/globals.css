@@ -174,9 +174,17 @@
 
 .markdown p,
 .markdown ul,
-.markdown ol,
-.markdown blockquote {
+.markdown ol {
   @apply my-6;
+}
+
+.markdown blockquote {
+    @apply border-s-4 pl-4 py-2 ;
+}
+
+.markdown blockquote > p {
+    @apply my-2;
+    color: var(--muted-foreground);
 }
 
 .markdown h2 {
